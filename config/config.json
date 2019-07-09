@@ -1,5 +1,27 @@
 ﻿[
 {
+    "url":"http://saturnus.geodan.nl/mapbox-viewer/adamov.html",
+    "title":"Real Time Map of Amsterdam public transportation",
+    "tags":["GVB","OV", "tram","train", "trein", "bus"],
+    "thumbnail":"thumbnails/adamov.jpg",
+    "description":"Real-time map of Amsterdam public transportation, showing car, bus, tram, train, metro, ferries and delays",
+    "date":"june 2019"
+},{
+    "url":"https://saturnus.geodan.nl/tomt/potree_amsterdam",
+    "title":"RGBZ pointcloud Amsterdam",
+    "tags":["AHN","AHN3", "pointcloud","potree"],
+    "thumbnail":"thumbnails/potree_amsterdam.jpg",
+    "description":"High resolution AHN3 3D RGB pointcloud viewer for Amsterdam",
+    "date":"february 2019"
+},{
+    "url":"https://www.youtube.com/watch?v=o2S7VjQuusc",
+    "title":"Loomo robot follows learned path",
+    "tags":["Loomo","Lomo", "robot","path", "navigation", "navigatie"],
+    "thumbnail":"thumbnails/loomo.jpg",
+    "description":"Loomo robot follows learned path using modified app for visually impaired people",
+    "date":"october 2018"
+},
+{
     "url":"http://research.geodan.nl/sites/camera/",
     "title":"Camera Field Of View",
     "tags":["Camera","FOV"],
