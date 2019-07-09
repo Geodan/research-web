@@ -21,18 +21,19 @@ class ResearchPage extends LitElement {
                 color: white;
             }
             .header {
-                height: 90px;
-                line-height: 90px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
+                font-size: x-large;
             }
             .header img {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 256px;
+                width: 200px;
             }
-            .header search-field {
-                position: absolute;
-                right: 20px;
+            .header div {
+                flex-grow: 1;
+                padding-bottom: 10px;
             }
             .demos {
                 display: flex;
@@ -58,9 +59,9 @@ class ResearchPage extends LitElement {
     render() {
         return html`
             <div class="header">
-                <img src="images/geodan.png">
-                Geodan Research demos
-                <search-field placeholder="Zoek..." @input="${e=>this._onInput(e)}"></search-field>
+                <div><img src="images/geodan.png"></div>
+                <div>Research demos</div>
+                <div><search-field placeholder="Filter..." @input="${e=>this._onInput(e)}"></search-field></div>
             </div>
             <div class="demos">
                 ${this.renderDemos()}
