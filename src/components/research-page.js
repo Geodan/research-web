@@ -43,6 +43,10 @@ class ResearchPage extends LitElement {
                 align-content: flex-start;
                 min-height: calc(100vh - 150px)
             }
+            .demos research-demo {
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
             .footer {
                 height: 40px;
                 line-height: 40px;
