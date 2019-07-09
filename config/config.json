@@ -185,7 +185,8 @@
 	"thumbnail":"./thumbnails/bgt3d.gif",
 	"tags": ["bgt", "3d", "webgl", "x3d"],
 	"date":"february 2015",
-	"description":"Showing the result of combining the BGT dataset of NL with pointcloud"
+    "description":"Showing the result of combining the BGT dataset of NL with pointcloud",
+    "disabled": true
 },                 
 {
 	"title": "Immersive 3D",
@@ -210,7 +211,8 @@
 	"tags": ["vectortiles", "d3", "topojson"],
     "thumbnail":"thumbnails/vectortiles.gif",
     "date":"september 2014",
-    "description":"Simple demo showing the use of vectortiles with different color schemas."
+    "description":"Simple demo showing the use of vectortiles with different color schemas.",
+    "disabled": true
 
 }, 
 {
@@ -229,7 +231,8 @@
 	"thumbnail":"./thumbnails/natuurbrand.gif",
 	"tags": ["natuubrand", "geoext", "model"],
 	"date":"august 2014",
-	"description":"Interface to a forestfire model, used by firefighters ✋ AUTHORISED ONLY! ✋"
+    "description":"Interface to a forestfire model, used by firefighters ✋ AUTHORISED ONLY! ✋",
+    "disabled": true
 },                                             
 {
 	"title": "Dynamic Holland Shading",
@@ -237,7 +240,8 @@
     "thumbnail":"thumbnails/hollandshading.gif",
     "tags":["html5","ahn","shading","dynamic","slider","canvas"],
     "date":"april 2014",
-    "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time"
+    "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time",
+    "disabled": true
 },          
 {
 	"title": "Waalweelde",
@@ -270,7 +274,8 @@
     "thumbnail":"thumbnails/cow.gif",
     "tags":["websockets","instant","communication","html5","crisis management"],
     "date":"november 2013",
-    "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water"
+    "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water",
+    "disabled": true
 },   
 {
 	"title": "Rochelroutes",
@@ -352,7 +357,8 @@
     "thumbnail":"thumbnails/hoogte.jpg",
     "tags":["ahn","mobile","nomap","geolocation"],
     "date":"march 2012",
-    "description":"A mobile-first application to show that geo-information doesn't need maps to be useful"
+    "description":"A mobile-first application to show that geo-information doesn't need maps to be useful",
+    "disabled": true
 },                                                                   
 {
 	"title": "Dynamische AHN",
