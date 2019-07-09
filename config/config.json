@@ -5,7 +5,8 @@
     "tags":["Camera","FOV"],
     "thumbnail":"thumbnails/cameras.gif",
     "description":"Camera Field Of View",
-    "date":"november 2017"
+    "date":"november 2017",
+    "disabled": true
 },
 {
     "url":"http://research.geodan.nl/sites/ndw_viewer/",
@@ -29,7 +30,8 @@
     "tags":["Unity","3D", "CNTK", "AI","Machine Learning"],
     "thumbnail":"thumbnails/unitycntkazure.gif",
     "description":"Real-Time AI on 3D geodata with Unity, CNTK and Azure",
-    "date":"augustus 2017"
+    "date":"augustus 2017",
+    "disabled": true
 },
 {
     "url":"https://youtu.be/COC0uGffbnE",
@@ -37,7 +39,8 @@
     "tags":["Unity","3D", "Video", "Youtube","AR","VR","Geomagine","360 degree"],
     "thumbnail":"thumbnails/geomagine_leeuwarden.gif",
     "description":"360 degree 3D video of Leeuwarden for AR/VR using BGT, Geodan GKN, AHN3 data",
-    "date":"augustus 2017"
+    "date":"augustus 2017",
+    "disabled": true
 },
 {
     "url":"https://youtu.be/NeXA7wOpZLE",
@@ -109,7 +112,8 @@
     "tags":["pointcloud", "greyhound"],
     "thumbnail":"thumbnails/speckly_comp.mp4",
     "description":"Pointcloud viewer showing capabilities of greyhound pointcloud server for large scale data, ✋ INTRANET ONLY! ✋",
-    "date":"november 2016"
+    "date":"november 2016", 
+    "disabled": true
 },
 {
     "url":"http://research.geodan.nl/sites/sensordashboard",
@@ -117,7 +121,8 @@
     "tags":["dashboards", "sensoren", "iot", "polymer","d3","gost"],
     "thumbnail":"thumbnails/dashboard.png",
     "description":"Interactive dashboard showing data being collected by GOST.",
-    "date":"oktober 2016"
+    "date":"oktober 2016",
+    "disabled": true
 },{
     "url":"http://research.geodan.nl/sites/gmiddag_dash",
     "title":"Geodanmiddag Dashboard",
@@ -131,7 +136,8 @@
     "tags":["subsurface","geology","geotop","html5","d3"],
     "thumbnail":"thumbnails/geotop.gif",
     "description":"Calculate subsurface sediment volumes within a specific area. Based on the GeoTOP shallow geologic model by TNO.",
-    "date":"march 2016"
+    "date":"march 2016",
+    "disabled": true
 },  
 {
     "url":"https://www.youtube.com/watch?v=RsegTOyDJrY&list=PL8rnbSE8XDq_bto-vl44h1uECG_t98AHo",

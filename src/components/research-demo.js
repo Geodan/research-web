@@ -13,11 +13,19 @@ class ResearchDemo extends LitElement {
     static get styles() {
         return css`
             .demo {
+                display: block;
                 width: 200px;
                 cursor: pointer;
                 position: relative;
                 margin-top: 10px;
                 margin-right: 10px;
+            }
+            a.demo {
+                text-decoration: none;
+                color: black;
+            }
+            a.demo:visited {
+                color: gray;
             }
             .preview { 
                 width: 100%; 
@@ -54,7 +62,7 @@ class ResearchDemo extends LitElement {
             return html`${demo.error}`
         }
         return html`
-        <div class="demo" @click="${e=>window.location=demo.url}">
+        <a class="demo" href="${demo.url}" target="researchdemo">
             <div class="preview">
                 <img src="${demo.thumbnail}">
             </div>
@@ -67,7 +75,7 @@ class ResearchDemo extends LitElement {
             <div class="date">
                 ${demo.date}
             </div>
-        </div>
+        </a>
         `;
     }
 }

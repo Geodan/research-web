@@ -39,6 +39,8 @@ class ResearchPage extends LitElement {
                 max-width: 100%;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-content: flex-start;
+                min-height: calc(100vh - 150px)
             }
             .footer {
                 height: 40px;
@@ -66,7 +68,6 @@ class ResearchPage extends LitElement {
             <div class="footer">
                 Geodan Research 2019
             </div>
-            
         `
     }
     firstUpdated() {
@@ -115,7 +116,7 @@ class ResearchPage extends LitElement {
                 }
             }
         }).then(demos=>{
-            return this.demos = demos
+            return this.demos = demos.filter(demo=>!demo.disabled)
         })
     }
 }
