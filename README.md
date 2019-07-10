@@ -27,6 +27,8 @@ Every new demo requires:
 * ``"tags":`` optional array of tags / keywords
 * ``"date":`` (month + year of publication)
 
+Do not forget to git push your changes (or create pull request) to make your changes persistent.
+
 ### build
 The build step is not necessary for updating the list of demos. To update the demo's, you can copy the updated ``config/config.json`` file and the updated ``thumbnails/`` to the webserver and reload the website into the browser.
 
