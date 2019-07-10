@@ -2,10 +2,17 @@
 {
     "url":"http://saturnus.geodan.nl/mapbox-viewer/adamov.html",
     "title":"Real Time Map of Amsterdam public transportation",
-    "tags":["GVB","OV", "tram","train", "trein", "bus"],
+    "tags":["GVB","OV", "tram","train", "trein", "bus", "iot"],
     "thumbnail":"thumbnails/adamov.jpg",
     "description":"Real-time map of Amsterdam public transportation, showing car, bus, tram, train, metro, ferries and delays",
     "date":"june 2019"
+},{
+    "url":"http://saturnus.geodan.nl/mapbox-viewer/mapbox-3dtiles",
+    "title":"Custom 3D-Tiles layer for mapbox-gl",
+    "tags":["mapbox-gl","3D", "tiles","rotterdam", "ahn", "pointcloud", "gltf", "b3dm"],
+    "thumbnail":"thumbnails/mapbox-3dtiles.jpg",
+    "description":"Custom mapbox-gl layer for 3d vector tiles (gltf, b3dm) of Rotterdam area",
+    "date":"march 2019"
 },{
     "url":"https://saturnus.geodan.nl/tomt/potree_amsterdam",
     "title":"RGBZ pointcloud Amsterdam",
