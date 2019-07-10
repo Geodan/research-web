@@ -19,6 +19,8 @@ class ResearchDemo extends LitElement {
                 position: relative;
                 margin-top: 10px;
                 margin-right: 10px;
+                box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.15);
+                min-height: 220px;
             }
             a.demo {
                 text-decoration: none;
@@ -40,11 +42,11 @@ class ResearchDemo extends LitElement {
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: calc(100% - 20px);
+                width: calc(100% - 10px);
                 height: 0px;
-                overflow: hidden;
+                overflow: auto;
                 transition: height .5s;
-                margin: 10px;
+                margin: 5px;
             }
             .preview:hover + .description, .description:hover {
                 height: calc(150px - 20px);

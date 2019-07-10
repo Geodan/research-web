@@ -30,7 +30,7 @@
 },{
     "url":"https://www.youtube.com/watch?v=o2S7VjQuusc",
     "title":"Loomo robot follows learned path",
-    "tags":["Loomo","Lomo", "robot","path", "navigation", "navigatie"],
+    "tags":["Loomo","Lomo", "robot","path", "navigation", "navigatie", "indoor","tango"],
     "thumbnail":"thumbnails/loomo.jpg",
     "description":"Loomo robot follows learned path using modified app for visually impaired people",
     "date":"october 2018"
