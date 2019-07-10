@@ -1,5 +1,12 @@
 ﻿[
 {
+    "url":"https://vimeo.com/344054150",
+    "title":"Amsterdam Smart City Dashboard",
+    "tags":["Digital Twin"," Dashboard","GOST","IoT","mobility","energy","environment","video","movie","3D","public transport","openbaar vervoer","energie","OV","mobiliteit","NDW","NS","GVB","fietsen","zonnepanelen","windturbines"],
+    "thumbnail":"thumbnails/smart-city-dashboard.png",
+    "description":"Video showing the Amsterdam Smart City Dashboard. This dashboard offers views of the Digital Twin of Amsterdam on three themes: mobility, energy and environment.",
+    "date":"june 2019"
+},{
     "url":"http://saturnus.geodan.nl/mapbox-viewer/adamov.html",
     "title":"Real Time Map of Amsterdam public transportation",
     "tags":["GVB","OV", "tram","train", "trein", "bus", "iot"],
