@@ -1,6 +1,7 @@
 import {LitElement, html, css} from "lit-element";
 import "./research-demo";
 import "./search-field";
+import "whatwg-fetch";
 
 class ResearchPage extends LitElement {
     static get properties() {
