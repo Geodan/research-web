@@ -3,6 +3,10 @@ import "./research-demo";
 import "./search-field";
 import "whatwg-fetch";
 
+/**
+* @polymer
+* @extends HTMLElement
+*/
 class ResearchPage extends LitElement {
     static get properties() {
         return {

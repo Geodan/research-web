@@ -1,5 +1,8 @@
 import {LitElement, html, css} from "lit-element";
-
+/**
+* @polymer
+* @extends HTMLElement
+*/
 class ResearchDemo extends LitElement {
     static get properties() {
         return {
@@ -58,7 +61,6 @@ class ResearchDemo extends LitElement {
         `
     }
     render() {
-        console.log('rendering demo')
         const demo = this.demo;
         if (this.demo.error) {
             return html`${demo.error}`

@@ -5,35 +5,64 @@
     "tags":["Digital Twin"," Dashboard","GOST","IoT","mobility","energy","environment","video","movie","3D","public transport","openbaar vervoer","energie","OV","mobiliteit","NDW","NS","GVB","fietsen","zonnepanelen","windturbines"],
     "thumbnail":"thumbnails/smart-city-dashboard.png",
     "description":"Video showing the Amsterdam Smart City Dashboard. This dashboard offers views of the Digital Twin of Amsterdam on three themes: mobility, energy and environment.",
-    "date":"june 2019"
+    "date":"June 2019"
 },{
     "url":"http://saturnus.geodan.nl/mapbox-viewer/adamov.html",
     "title":"Real Time Map of Amsterdam public transportation",
     "tags":["GVB","OV", "tram","train", "trein", "bus", "iot"],
     "thumbnail":"thumbnails/adamov.jpg",
     "description":"Real-time map of Amsterdam public transportation, showing car, bus, tram, train, metro, ferries and delays",
-    "date":"june 2019"
+    "date":"June 2019"
 },{
+    "url": "https://youtu.be/dv2My6ZoS4o",
+    "title": "Aalsmeer, Maximastraat, Noise load visualized",
+    "tags": ["db", "sound", "licht", "video", "audio", "decibel", "geluid", "model", "visualisatie"],
+    "thumbnail": "thumbnails/simnoise.jpg",
+    "description": "Visualization of modelled noise spread and reflection intensities in Maximastraat, city of Aalsmeer, NL",
+    "date": "April 2019"
+},
+{
     "url":"http://saturnus.geodan.nl/mapbox-viewer/mapbox-3dtiles",
     "title":"Custom 3D-Tiles layer for mapbox-gl",
     "tags":["mapbox-gl","3D", "tiles","rotterdam", "ahn", "pointcloud", "gltf", "b3dm"],
     "thumbnail":"thumbnails/mapbox-3dtiles.jpg",
     "description":"Custom mapbox-gl layer for 3d vector tiles (gltf, b3dm) of Rotterdam area",
-    "date":"march 2019"
+    "date":"March 2019"
 },{
     "url":"https://saturnus.geodan.nl/tomt/potree_amsterdam",
     "title":"RGBZ pointcloud Amsterdam",
     "tags":["AHN","AHN3", "pointcloud","potree"],
     "thumbnail":"thumbnails/potree_amsterdam.jpg",
     "description":"High resolution AHN3 3D RGB pointcloud viewer for Amsterdam",
-    "date":"february 2019"
+    "date":"February 2019"
+},{
+    "url":"https://www.youtube.com/watch?v=n4_EldwgsHw ",
+    "title":"Ecocraft",
+    "tags":["energietransitie", "minecraft"],
+    "thumbnail":"thumbnails/ecocraft.png",
+    "description":"Ecocraft is a computer game, as well as an educational tool, as well as a citizen participation tool, developed for joint creation of sustainable urban spaces. The virtual environment of Ecocraft is created by digital twinning the real world into the virtual world of the popular computer game Minecraft. The gaming environment of Ecocraft is based on accurate geospatial data of the real world and utilizes impact models and future scenarios to simulate and visualize future developments and their implications, providing the user with relevant information during the game / the design processes. The objective of Ecocraft is to raise environmental awareness among children and youth, particularly about their surrounding environment and its processes, as well as the human impact on the environment and the need for sustainable resource management. Ecocraft players will aim to design the city in a way, which enables creating friendly, green spaces that harmoniously combine the city's components - architecture and infrastructure, transport, the needs of local communities, public space, climate conditions and resource availability. The city should meet the expectations of different groups of users by responding to their needs.",
+    "date":"January 2019"
+},{
+    "url":"https://youtu.be/zcuhBMlklNc",
+    "title":"Hololens Geotop visualization",
+    "tags":["AR","Augmented Reality", "Hololens","Unity", "Extended Reality"],
+    "thumbnail":"thumbnails/hololensgeotop.png",
+    "description":"This HoloLens augmented reality app visualizes the Geotop (soil layers) underneath the city centre of Amsterdam. The user can interact with this model to see the ground layers and drillings that have been done around the city and get insights on what's in the ground. The app is made in Unity.",
+    "date":"December 2018"
 },{
     "url":"https://www.youtube.com/watch?v=o2S7VjQuusc",
-    "title":"Loomo robot follows learned path",
+    "title":"Loomo robot follows visually learned path",
     "tags":["Loomo","Lomo", "robot","path", "navigation", "navigatie", "indoor","tango"],
     "thumbnail":"thumbnails/loomo.jpg",
-    "description":"Loomo robot follows learned path using modified app for visually impaired people",
-    "date":"october 2018"
+    "description":"Loomo robot follows visually learned path using modified app (Finch) for visually impaired people",
+    "date":"October 2018"
+},{
+    "url":"https://youtu.be/NHj2kLNcq5o",
+    "title":"GeodanGo Augmented Reality Experience",
+    "tags":["AR", "Augmented Reality", "ARCore", "Unity", "Extended Reality", "Android"],
+    "thumbnail":"thumbnails/geodango.png",
+    "description":"This Android app shows the great potential of augmented reality (AR) applications. It features AR point of interests, customizable walls and see-through walls, as well as indoor and outdoor AR routing. The app is made in Unity, combined with Google's ARCore.",
+    "date":"August 2018"
 },
 {
     "url":"http://research.geodan.nl/sites/camera/",
@@ -41,7 +70,7 @@
     "tags":["Camera","FOV"],
     "thumbnail":"thumbnails/cameras.gif",
     "description":"Camera Field Of View",
-    "date":"november 2017",
+    "date":"November 2017",
     "disabled": true
 },
 {
@@ -50,7 +79,7 @@
     "tags":["NDW","Traffic", "Visualization","WebGL","Deck.GL","Arena"],
     "thumbnail":"thumbnails/ndwviewer.gif",
     "description":"Real-time animated NDW traffic data",
-    "date":"november 2017"
+    "date":"November 2017"
 },
 {
     "url":"http://research.geodan.nl/sites/360Viewer/",
@@ -58,7 +87,7 @@
     "tags":["Unity","3D", "360 degree","Photo","Streams", "Video", "Upload"],
     "thumbnail":"thumbnails/360viewer.gif",
     "description":"360 degree interactive content viewer for video, photo and streams",
-    "date":"augustus 2017"
+    "date":"August 2017"
 },
 {
     "url":"http://research.geodan.nl/sites/unity-cntk-azure/",
@@ -66,7 +95,7 @@
     "tags":["Unity","3D", "CNTK", "AI","Machine Learning"],
     "thumbnail":"thumbnails/unitycntkazure.gif",
     "description":"Real-Time AI on 3D geodata with Unity, CNTK and Azure",
-    "date":"augustus 2017",
+    "date":"August 2017",
     "disabled": true
 },
 {
@@ -75,7 +104,7 @@
     "tags":["Unity","3D", "Video", "Youtube","AR","VR","Geomagine","360 degree"],
     "thumbnail":"thumbnails/geomagine_leeuwarden.gif",
     "description":"360 degree 3D video of Leeuwarden for AR/VR using BGT, Geodan GKN, AHN3 data",
-    "date":"augustus 2017",
+    "date":"August 2017",
     "disabled": true
 },
 {
@@ -84,7 +113,7 @@
     "tags":["Unity","3D", "Pointcloud", "Indoor Navigation","3D Audio Navigation", "Tactile Navigation", "SLAM", "Google Tango"],
     "thumbnail":"thumbnails/finch.gif",
     "description":"Finch: Indoor Navigation for visually impaired with Google Tango",
-    "date":"augustus 2017"
+    "date":"August 2017"
 },
 {
     "url":"http://saturnus.geodan.nl/frans/bro/lekdijk_geotop.xhtml",
@@ -92,15 +121,14 @@
     "tags":["BRO","X3D"],
     "thumbnail":"thumbnails/bro_x3dom.gif",
     "description":"Basisregistratie Ondergrond in 3D",
-    "date":"july 2017"
+    "date":"July 2017"
 },{
     "url":"http://research.geodan.nl/sites/demos/mbstorymap/",
     "title":"Mapbox Vector Tiles",
     "tags":["vector tiles","mapbox", "vector", "tiles", "storymap", "story", "map"],
     "thumbnail":"thumbnails/mbstorymap.gif",
     "description":"Story map explaining some virtues of vector tiles",
-    "date":"june 22 2017"
-
+    "date":"June 22 2017"
 },
 {
     "url":"http://research.geodan.nl/sites/demos/geodangebouw_bgt/",
@@ -108,7 +136,7 @@
     "tags":["BIM","X3D"],
     "thumbnail":"thumbnails/geodangebouw.gif",
     "description":"Geodan building based on BIM model represented in X3D",
-    "date":"march 2017"
+    "date":"March 2017"
 },
 {
     "url":"http://research.geodan.nl/sites/GeodanAI/CrowdSim/",
@@ -116,7 +144,7 @@
     "tags":["geocraft", "Microsoft", "AI", "3D", "voxel", "unity", "agent", "minecraft", "amsterdam", "WebGL", "Crowd", "Simulation"],
     "thumbnail":"thumbnails/crowdsim.gif",
     "description":"Geocraft model with basic Crowd Simulation",
-    "date":"november 2016"
+    "date":"November 2016"
 },
 {
     "url":"https://www.youtube.com/watch?v=XWgbMgKBa5I",
@@ -124,7 +152,7 @@
     "tags":["geocraft", "Microsoft", "Hololens", "3D", "voxel", "minecraft", "amsterdam", "AR"],
     "thumbnail":"thumbnails/hololens.gif",
     "description":"Geocraft model loaded onto a Microsoft Hololens",
-    "date":"november 2016"
+    "date":"November 2016"
 },
 {
     "url":"https://www.youtube.com/watch?v=EWIV_ggV8hI",
@@ -132,7 +160,7 @@
     "tags":["geocause", "HTC vive", "3D", "Gorinchem", "VR"],
     "thumbnail":"thumbnails/geocause.gif",
     "description":"The HTC vive allows the user to walk through Gorinchem in 2040, through Geocause",
-    "date":"november 2016"
+    "date":"November 2016"
 },
     {
     "url":"https://www.youtube.com/watch?v=uuhZ0cWc2Ds",
@@ -140,7 +168,7 @@
     "tags":["geocraft", "project tango", "3D", "voxel", "minecraft", "amsterdam", "AR"],
     "thumbnail":"thumbnails/tango.gif",
     "description":"Geocraft model loaded onto a Project Tango with Unity3D to create a city on a desk",
-    "date":"november 2016"
+    "date":"November 2016"
 },
 	{
     "url":"http://speck.ly/?s=http://metis/greyhound/&r=geocensus",
@@ -148,7 +176,7 @@
     "tags":["pointcloud", "greyhound"],
     "thumbnail":"thumbnails/speckly_comp.mp4",
     "description":"Pointcloud viewer showing capabilities of greyhound pointcloud server for large scale data, ✋ INTRANET ONLY! ✋",
-    "date":"november 2016", 
+    "date":"November 2016", 
     "disabled": true
 },
 {
@@ -157,7 +185,7 @@
     "tags":["dashboards", "sensoren", "iot", "polymer","d3","gost"],
     "thumbnail":"thumbnails/dashboard.png",
     "description":"Interactive dashboard showing data being collected by GOST.",
-    "date":"oktober 2016",
+    "date":"October 2016",
     "disabled": true
 },{
     "url":"http://research.geodan.nl/sites/gmiddag_dash",
@@ -165,14 +193,14 @@
     "tags":["dashboards", "crossfilter", "dcjs", "d3"],
     "thumbnail":"thumbnails/gmiddag.gif",
     "description":"Interactive dashboard showing data collected during the Geodanmiddag 2016 event.",
-    "date":"april 2016"
+    "date":"April 2016"
 },  {
     "url":"http://research.geodan.nl/sites/geotop/excavator",
     "title":"GeoTOP Excavator",
     "tags":["subsurface","geology","geotop","html5","d3"],
     "thumbnail":"thumbnails/geotop.gif",
     "description":"Calculate subsurface sediment volumes within a specific area. Based on the GeoTOP shallow geologic model by TNO.",
-    "date":"march 2016",
+    "date":"March 2016",
     "disabled": true
 },  
 {
@@ -181,7 +209,7 @@
     "tags":["geocraft", "geology", "3D", "voxel", "minecraft"],
     "thumbnail":"thumbnails/dgm.gif",
     "description":"TNO's Digital Geology Model loaded in Geocraft with semi-transparent voxels to show deep geology",
-    "date":"february 2016"
+    "date":"February 2016"
 },
 {
     "title": "Provincies en data",
@@ -197,21 +225,21 @@
     "tags":["vector tiles","mapboxgl","bag","html5","clustering"],
     "thumbnail":"thumbnails/bagtiles.gif",
     "description":"A viewer which shows the rendering speeds of vector-tiles with serverside clustering of 11 million buildings",
-    "date":"may 2015"
+    "date":"May 2015"
 },  {
     "url":"http://research.geodan.nl/sites/buurten",
     "title":"CBS Vector Tiles",
     "tags":["vector tiles","filter","polymer","leaflet","cbs","html5"],
     "thumbnail":"thumbnails/buurten.gif",
     "description":"A viewer which allows for dynamic filtering on attributes using vector tiles",
-    "date":"april 2015"
+    "date":"April 2015"
 },    
 {
         "title": "Mappu",
         "url": "./mappu/index.html",
 	"thumbnail":"./thumbnails/mappu.gif",
         "tags": ["mappu", "3d"],
-        "date":"march 2015",
+        "date":"March 2015",
         "description":"A new mapping library created by Geodan",
         "disabled":true
 },                 
@@ -220,7 +248,7 @@
 	"url": "./bgt_3d/index.html",
 	"thumbnail":"./thumbnails/bgt3d.gif",
 	"tags": ["bgt", "3d", "webgl", "x3d"],
-	"date":"february 2015",
+	"date":"February 2015",
     "description":"Showing the result of combining the BGT dataset of NL with pointcloud",
     "disabled": true
 },                 
@@ -229,7 +257,7 @@
 	"url": "https://www.youtube.com/watch?v=GNxYz2UcETM",
 	"thumbnail":"./thumbnails/immersive.gif",
 	"tags": ["falcon", "3d", "leap motion", "oculus rift","unity","video"],
-	"date":"february 2015",
+	"date":"February 2015",
 	"description":"A video showing immersive 3D with novel navigation controls"
 },                                                         
 {
@@ -237,7 +265,7 @@
 	"url": "http://research.geodan.nl/sites/topo3d/geodan.html",
 	"thumbnail":"thumbnails/top10nl.gif",
 	"tags": ["top10nl", "3d", "webgl", "x3d"],
-	"date":"december 2014",
+	"date":"December 2014",
 	"description":"Showing the result of combining the topographic dataset of NL with pointcloud",
 	"disabled":true
 },             
@@ -246,7 +274,7 @@
 	"url": "http://research.geodan.nl/sites/vectortiles/",
 	"tags": ["vectortiles", "d3", "topojson"],
     "thumbnail":"thumbnails/vectortiles.gif",
-    "date":"september 2014",
+    "date":"September 2014",
     "description":"Simple demo showing the use of vectortiles with different color schemas.",
     "disabled": true
 
@@ -256,7 +284,7 @@
     "url":"http://research.geodan.nl/sites/buffer",
     "tags":["buffer","jsts","webgis","ol3"],
     "thumbnail":"thumbnails/buffer.gif",
-    "date":"september 2014",
+    "date":"September 2014",
     "description":"Simple test with ol3 & JSTS to draw a buffer around a line, point of polygon with user-set buffer size",
     "disabled":true
     
@@ -266,7 +294,7 @@
 	"url": "http://model.geodan.nl/main/gmi/",
 	"thumbnail":"./thumbnails/natuurbrand.gif",
 	"tags": ["natuubrand", "geoext", "model"],
-	"date":"august 2014",
+	"date":"August 2014",
     "description":"Interface to a forestfire model, used by firefighters ✋ AUTHORISED ONLY! ✋",
     "disabled": true
 },                                             
@@ -275,7 +303,7 @@
 	"url": "http://research.geodan.nl/sites/ahn",
     "thumbnail":"thumbnails/hollandshading.gif",
     "tags":["html5","ahn","shading","dynamic","slider","canvas"],
-    "date":"april 2014",
+    "date":"April 2014",
     "description":"By encoding the AHN DEM in special tiles, this viewer allows for interactively show the hill shade given a specific date and time",
     "disabled": true
 },          
@@ -284,7 +312,7 @@
 	"url": "http://research.geodan.nl/sites/waalweelde/service/",
     "thumbnail":"thumbnails/waalweelde.gif",
     "tags":["model","classification","vegetation","landuse","html5"],
-    "date":"february 2014",
+    "date":"February 2014",
     "description":"Proof of concept to show how vegetation succession modelling can be utilised in river-management. It calculates the type of vegetation in 10 years for the selected area",
     "disabled":true
 },       
@@ -309,7 +337,7 @@
 	"url": "http://research.geodan.nl/sites/geofort-crisisworkshop/",
     "thumbnail":"thumbnails/cow.gif",
     "tags":["websockets","instant","communication","html5","crisis management"],
-    "date":"november 2013",
+    "date":"November 2013",
     "description":"COW allows for instant communication through different networks by utilizing secure websockets to share location, extent, features and texts. It is used in ICM-water",
     "disabled": true
 },   
@@ -318,7 +346,7 @@
 	"url": "http://research.geodan.nl/sites/milieudefensie/",
     "thumbnail":"thumbnails/milieudefensie.gif",
     "tags":["video","ultrafijnstof","html5","gps","time","graph","canvas"],
-    "date":"august 2013",
+    "date":"August 2013",
     "description":"Various cycle-routes through cities to show ultra-fine-dust measurements, using onboard video, GPS and measurements"
 },  
 {
@@ -326,7 +354,7 @@
 	"url": "https://www.youtube.com/watch?v=DDA8jrPAPRA",
     "thumbnail":"thumbnails/multiusermap.gif",
     "tags":["video","phoenix","cow","multi user","websockets"],
-    "date":"januari 2013",
+    "date":"Januari 2013",
     "description":"A video showing Phoenix instantly sharing features with webclients and mobile phones"
 },   
 {   
@@ -368,7 +396,7 @@
 	"url": "http://research.geodan.nl/sites/kadaster/index5.html",
     "thumbnail": "thumbnails/kadaster-animatie.gif",
     "tags":["html5","animation","route","vector","congress"],
-    "date":"september 2012",
+    "date":"September 2012",
     "description":"A simple demo showing where different participants at a congress are coming from, including the route they took."
 },                                                
 {
@@ -376,7 +404,7 @@
 	"url": "http://research.geodan.nl/sites/kadaster/bag2.html",
     "thumbnail":"thumbnails/kadaster-bag.gif",
     "tags":["vector","filtering","buildings"],
-    "date":"september 2012",
+    "date":"September 2012",
     "description":"A simple demo that allows the user to select buildings based on their usage-type"
 },                                                 
 {
@@ -384,7 +412,7 @@
 	"url": "https://www.youtube.com/watch?v=cZ-wRTF_jCs",
     "thumbnail":"thumbnails/childsplay.gif",
     "tags":["phoenix","video","intuitive","drawing","spatial planning"],
-    "date":"august 2012",
+    "date":"August 2012",
     "description":"The kids of a colleague came by while we were working on a movie about our spatial planning application 'Phoenix'. With hardly any guidance and no previous exposure they searched for their house, drew hearts and generally had fun."
 },                                                    
 {
@@ -392,7 +420,7 @@
 	"url": "https://research.geodan.nl/sites/hoogte/",
     "thumbnail":"thumbnails/hoogte.jpg",
     "tags":["ahn","mobile","nomap","geolocation"],
-    "date":"march 2012",
+    "date":"March 2012",
     "description":"A mobile-first application to show that geo-information doesn't need maps to be useful",
     "disabled": true
 },                                                                   
@@ -401,7 +429,7 @@
 	"url": "http://stvno.github.io/page/ahn",
     "thumbnail":"thumbnails/ahn2.gif",
     "tags":["canvas","html5","ahn","ahn2","height","slider","dynamic"],
-    "date":"february 2012",
+    "date":"February 2012",
     "description":"By encoding the heightof the Netherlands in specific PNG-tiles, this viewer uses canvas to rapidly change the classification of the height data"
 },                                                                   
 {
@@ -409,7 +437,7 @@
 	"url": "http://bag.edugis.nl/",
     "thumbnail":"thumbnails/ibag.gif",
     "tags":["canvas","html5","bag","buildings","time","slider","dynamic"],
-    "date":"january 2012",
+    "date":"January 2012",
     "description":"By encoding the age of buildings in specific PNG-tiles, this viewer uses canvas to rapidly show the growth of cities over time"
 },                                                                   
 {
@@ -417,7 +445,7 @@
 	"url": "https://www.youtube.com/watch?v=CdLcTaJzTmI",
     "thumbnail":"thumbnails/tangible.gif",
     "tags":["surface","tangible ui","cyclorama","video"],
-    "date":"august 2009",
+    "date":"August 2009",
     "description":"A video showing how manipulating real world objects can be translated into a 360 view of the underlying map."
 }
 ]
