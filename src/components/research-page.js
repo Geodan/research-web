@@ -21,9 +21,8 @@ class ResearchPage extends LitElement {
     static get styles() {
         return css`
             .header, .footer {
-                background-color: #526E9C; 
+                background-color: white; 
                 text-align: center;
-                color: white;
             }
             .header {
                 display: flex;
@@ -32,6 +31,7 @@ class ResearchPage extends LitElement {
                 align-content: center;
                 align-items: center;
                 font-size: x-large;
+                border-top: 5px solid #c00;
             }
             .header img {
                 width: 200px;
@@ -46,7 +46,8 @@ class ResearchPage extends LitElement {
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: flex-start;
-                min-height: calc(100vh - 150px)
+                min-height: calc(100vh - 150px);
+                margin-left: 5px;
             }
             .demos research-demo {
                 padding-top: 5px;
