@@ -1,5 +1,12 @@
 ﻿[
 {
+    "url":"localdemo/edugis.html",
+    "title":"EduGIS",
+    "tags":["education","viewer","mapbox-gl","3D","vector","gis","qgis","postgis","kaart","map","onderwijs","data"],
+    "thumbnail":"thumbnails/edugis.jpg",
+    "description":"EduGIS, an educational GIS and mapping platform for the web",
+    "date":"July 2019"
+},{
     "url":"https://vimeo.com/344054150",
     "title":"Amsterdam Smart City Dashboard",
     "tags":["Digital Twin"," Dashboard","GOST","IoT","mobility","energy","environment","video","movie","3D","public transport","openbaar vervoer","energie","OV","mobiliteit","NDW","NS","GVB","fietsen","zonnepanelen","windturbines"],
