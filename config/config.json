@@ -1,5 +1,13 @@
 ﻿[
 {
+    "url":"https://www.youtube.com/watch?v=nf1Y72ptPys&feature=youtu.be",
+    "title":"Geomagine Lemmer 360°",
+    "tags":["geomagine", "lemmer", "360 degrees", "participation"],
+    "thumbnail":"thumbnails/geomagine_lemmer.png",
+    "description":"This Geomagine 360 video is a virtual experience of a redevelopment scenario in the municipality of De Fryske Marren, The Netherlands. The current and future situation of a certain street can be vritually experienced. The content is entirely generated from data, algorithms and models - and therefore not drawn manually. This allows for an efficient and flexibel production of vritual experiences anywhere in the Netherlands. With the mouse - swipe or gyroscope on a smartphone - one can look around anywhere at any time during the video.",
+    "date":"August 2019"
+},
+{
     "url":"localdemo/edugis.html",
     "title":"EduGIS",
     "tags":["education","viewer","mapbox-gl","3D","vector","gis","qgis","postgis","kaart","map","onderwijs","data"],
