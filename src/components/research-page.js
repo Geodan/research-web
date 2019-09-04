@@ -22,32 +22,51 @@ class ResearchPage extends LitElement {
         return css`
             .header, .footer {
                 background-color: white; 
+            }
+            .footer {
                 text-align: center;
             }
             .header {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                align-content: center;
                 align-items: center;
+                padding: 0 57px 0 57px;
+                max-width: 1450px;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header-title {
                 font-size: x-large;
-                border-top: 5px solid #c00;
+                text-transform: uppercase;
             }
-            .header img {
-                width: 200px;
+            .header-input search-field {
+                
             }
-            .header div {
-                flex-grow: 1;
-                padding-bottom: 10px;
+            .header-logo img {
+                height: 60px;
+                width: auto;
+                display: block;
             }
             .demos {
                 display: flex;
-                max-width: 100%;
+                width: 100%;
+                max-width: 1450px;
+                margin-left: auto;
+                margin-right: auto;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-between;
                 align-content: flex-start;
                 min-height: calc(100vh - 150px);
-                margin-left: 5px;
+                background-color: #f4f4f4;
+                padding: 57px;
+                box-sizing: border-box;
+            }
+            .demos {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 200px);
+                grid-gap: 1rem;                
             }
             .demos research-demo {
                 padding-top: 5px;
@@ -56,6 +75,23 @@ class ResearchPage extends LitElement {
             .footer {
                 height: 40px;
                 line-height: 40px;
+            }
+            @media all and (max-width: 710px) {
+                .header-input {
+                    order: 3;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+            }
+            @media all and (max-width: 550px) {
+                .header {
+                    justify-content: center;
+                }
+                .demos {
+                    display: flex;
+                    justify-content: center;
+                }
             }
         `
     }
@@ -69,9 +105,9 @@ class ResearchPage extends LitElement {
     render() {
         return html`
             <div class="header">
-                <div><img src="images/geodan.png"></div>
-                <div>Research demos</div>
-                <div><search-field placeholder="Filter..." @input="${e=>this._onInput(e)}"></search-field></div>
+                <div class="header-title"><b>Research</b> demos</div>
+                <div class="header-input"><search-field placeholder="Search" @input="${e=>this._onInput(e)}"></search-field></div>
+                <div class="header-logo"><img src="images/geodan.png"></div>
             </div>
             <div class="demos">
                 ${this.renderDemos()}
