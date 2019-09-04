@@ -121,13 +121,16 @@ class ResearchPage extends LitElement {
         this._loadConfig();
     }
     _onInput(e) {
-        this._filterDemos(this.shadowRoot.querySelector('search-field').getAttribute('value'));
+        if (this.timeout !== undefined) {
+            window.clearTimeout(this.timeout);
+        }
+        this.timeout = window.setTimeout(()=> 
+            this._filterDemos(this.shadowRoot.querySelector('search-field').getAttribute('value')),
+            200);
     }
     _filterDemos(filterString) {
-        if (!this.allDemos) {
-            this.allDemos = [...this.demos];
-        }
         filterString = filterString.trim();
+        window.sessionStorage.setItem('filter', filterString)
         if (filterString === "") {
             this.demos = [...this.allDemos];
             return;
@@ -154,7 +157,6 @@ class ResearchPage extends LitElement {
             if (!response.ok) {
                 return [{"error": `failed to fetch ${this.config}`}];
             } else {
-                console.log('parsing...');
                 try {
                     const json  = response.json();
                     return json;
@@ -163,7 +165,14 @@ class ResearchPage extends LitElement {
                 }
             }
         }).then(demos=>{
-            return this.demos = demos.filter(demo=>!demo.disabled)
+            this.allDemos = demos.filter(demo=>!demo.disabled);
+            let filterString = window.sessionStorage.getItem('filter');
+            if (filterString && filterString.trim() !== '') {
+                this.shadowRoot.querySelector('search-field').setAttribute('value', filterString);
+                this._onInput();
+            } else {
+                this._filterDemos('');
+            }
         })
     }
 }

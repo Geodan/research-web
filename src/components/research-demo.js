@@ -1,4 +1,5 @@
 import {LitElement, html, css} from "lit-element";
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js'
 /**
 * @polymer
 * @extends HTMLElement
@@ -6,7 +7,9 @@ import {LitElement, html, css} from "lit-element";
 class ResearchDemo extends LitElement {
     static get properties() {
         return {
-            demo: {type: Object}
+            demo: {
+                type: Object
+            }
         }
     }
     constructor() {
@@ -100,13 +103,15 @@ class ResearchDemo extends LitElement {
         if (this.demo.error) {
             return html`${demo.error}`
         }
+        // using unsafeHTML for img in preview so that superGif can update the html
+        // otherwise litelement would try to update the (no longer existing) img src part only
         return html`
         <div class="demo">
             <div class="preview">
-                <img src="${demo.thumbnail}" rel:auto_play="0">
+                ${unsafeHTML(`<img src="${demo.thumbnail}" rel:auto_play="0">`)}
             </div>
             <div class="info">
-                <a href="${demo.url}" target="researchdemo">
+                <a href="${demo.url}">
                     <div class="date">
                         ${demo.date}
                     </div>
@@ -124,25 +129,43 @@ class ResearchDemo extends LitElement {
         </div>
         `;
     }
-    firstUpdated() {
-        if (this.demo.thumbnail.endsWith('.gif')) {
-            let img = this.shadowRoot.querySelector('.preview img');
-            this.sup = new SuperGif({
-                gif: img,
-                progressbar_height: 0
-            });
-            this.sup.load();
-            let preview = this.shadowRoot.querySelector('.preview');
-            preview.addEventListener('mouseover', ()=>this.startgif());
-            preview.addEventListener('mouseout', ()=>this.stopgif());
-            preview.addEventListener('click', ()=>this.togglegif())
-        }
+    updated(changedProperties) {
+        changedProperties.forEach((oldValue, propertyName) => {
+            if (propertyName === 'demo') {
+                if (this.demo.thumbnail.endsWith('.gif')) {
+                    let img = this.shadowRoot.querySelector('.preview img');
+                    this.sup = new SuperGif({
+                        gif: img,
+                        progressbar_height: 0
+                    });
+                    this.sup.load();
+                    let preview = this.shadowRoot.querySelector('.preview');
+                    if (!this.startgifBound) {
+                        this.startgifBound = this.startgif.bind(this);
+                        this.stopgifBound = this.stopgif.bind(this);
+                        this.togglegifBound =this.togglegif.bind(this);
+                    }
+                    preview.addEventListener('mouseover', this.startgifBound);
+                    preview.addEventListener('mouseout', this.stopgifBound);
+                    preview.addEventListener('click', this.togglegifBound);
+                } else {
+                    if (this.startgifBound && this.sup) {
+                        let preview = this.shadowRoot.querySelector('.preview');
+                        preview.removeEventListener('mouseover', this.startgifBound);
+                        preview.removeEventListener('mouseout', this.stopgifBound);
+                        preview.removeEventListener('click', this.togglegifBound);
+                        this.sup = undefined;
+                    }
+                }
+            }
+        });
+        
     }
     startgif(){
         if (!this.sup.get_loading()) {
             this.sup.play();
             this.justStartedPlaying = true; // touch-devices: mouseover and click both fire at same time
-            window.setTimeout(()=>this.justStartedPlaying = false, 1000);
+            window.setTimeout(()=>this.justStartedPlaying = false, 10);
         }
     }
     stopgif(){
