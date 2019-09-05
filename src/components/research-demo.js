@@ -103,6 +103,12 @@ class ResearchDemo extends LitElement {
         if (this.demo.error) {
             return html`${demo.error}`
         }
+        let linkUrl = demo.url;
+        if (linkUrl.startsWith('https://www.youtube.com')){
+            linkUrl = `./video.html?url=${encodeURIComponent(demo.url)}`;
+        } else if (linkUrl.startsWith('https://youtu.be')){
+            linkUrl = `./video.html?url=${encodeURIComponent(demo.url)}`;
+        }
         // using unsafeHTML for img in preview so that superGif can update the html
         // otherwise litelement would try to update the (no longer existing) img src part only
         return html`
@@ -111,7 +117,7 @@ class ResearchDemo extends LitElement {
                 ${unsafeHTML(`<img src="${demo.thumbnail}" rel:auto_play="0">`)}
             </div>
             <div class="info">
-                <a href="${demo.url}">
+                <a href="${linkUrl}">
                     <div class="date">
                         ${demo.date}
                     </div>
