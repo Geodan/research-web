@@ -5,7 +5,12 @@
     "images/**/*", "config/**/*", "thumbnails/**/*", "localdemo/**/*"
   ],
   "extraDependencies": [
-    "node_modules/@webcomponents/webcomponentsjs/**"
+    "node_modules/@webcomponents/webcomponentsjs/**",
+    "more.html",
+    "src/components/more-page.js",
+    "video.html",
+    "src/components/video-page.js",
+    "libgif.js"
   ],
   "builds": [
     {

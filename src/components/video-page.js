@@ -13,7 +13,7 @@ class VideoPage extends LitElement {
     }
     constructor() {
         super();
-        this.config = "../config/config.json";
+        this.config = "./config/config.json";
         this.demos = [];
     }
     static get styles() {
@@ -128,7 +128,7 @@ class VideoPage extends LitElement {
             <iframe src="https://player.vimeo.com/video/${demo.url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             `
         }        
-        return html`<iframe  src="https://www.youtube.com/embed/${demo.url}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        return html`<iframe  src="https://www.youtube.com/embed/${demo.url}?modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     }
     renderVideo() {
         if (this.demos.length === 0) {
@@ -137,7 +137,7 @@ class VideoPage extends LitElement {
         return html`
             <div class="graybackground">
                 <div class="content">
-                    <div class="back" onclick="window.history.back()"><img src="images/icon-back.svg">Back</div>
+                    <div class="back" onclick="window.history.go(-1);"><img src="images/icon-back.svg">Back</div>
                     <div class="videodemo">
                         <div class="date"><b>Date</b> - ${this.demos[0].date}</div>
                         <div class="title">${this.demos[0].title}</div>

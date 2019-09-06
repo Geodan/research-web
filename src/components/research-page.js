@@ -15,7 +15,7 @@ class ResearchPage extends LitElement {
     }
     constructor() {
         super();
-        this.config = "../config/config.json";
+        this.config = "./config/config.json";
         this.demos = [];
     }
     static get styles() {

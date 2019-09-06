@@ -13,7 +13,7 @@ class MorePage extends LitElement {
     }
     constructor() {
         super();
-        this.config = "../config/config.json";
+        this.config = "./config/config.json";
         this.demos = [];
     }
     static get styles() {
@@ -133,7 +133,7 @@ class MorePage extends LitElement {
         return html`
             <div class="graybackground">
                 <div class="content">
-                    <div class="back" onclick="window.history.back()"><img src="images/icon-back.svg">Back</div>
+                    <div class="back" onclick="window.history.go(-1);"><img src="images/icon-back.svg">Back</div>
                     <div class="videodemo">
                         <div class="date"><b>Date</b> - ${this.demos[0].date}</div>
                         <div class="title">${this.demos[0].title}</div>

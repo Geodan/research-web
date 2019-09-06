@@ -174,24 +174,27 @@ class ResearchDemo extends LitElement {
     startgif(){
         if (!this.sup.get_loading()) {
             this.sup.play();
-            this.justStartedPlaying = true; // touch-devices: mouseover and click both fire at same time
-            window.setTimeout(()=>this.justStartedPlaying = false, 10);
         }
     }
     stopgif(){
-        if (this.justStartedPlaying) {
-            return false;
+        if (this.gifClicked) {
+            return; // do nothing
         }
         if (this.sup.get_playing()) {
             this.sup.pause();
-            return true;
         }
-        return false;
     }
     togglegif() {
-        if (!this.stopgif()) {
-            this.startgif();
+        this.gifClicked = true;
+        if(this.sup.get_loading()) {
+            return window.setTimeout(this.togglegifBound, 500);
         }
+        if (this.sup.get_playing()) {
+            this.sup.pause();
+        } else {
+            this.sup.play();
+        }
+
     }
 }
 
