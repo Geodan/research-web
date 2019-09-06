@@ -146,7 +146,9 @@ class ResearchDemo extends LitElement {
                     let img = this.shadowRoot.querySelector('.preview img');
                     this.sup = new SuperGif({
                         gif: img,
-                        progressbar_height: 0
+                        progressbar_height: 2,
+                        progressbar_foreground_color: "#1c5a6d",
+                        progressbar_background_color: "#ffffff"
                     });
                     this.sup.load();
                     let preview = this.shadowRoot.querySelector('.preview');

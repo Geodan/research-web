@@ -93,7 +93,7 @@
     "title":"Real-time animated NDW traffic data",
     "tags":["NDW","Traffic", "Visualization","WebGL","Deck.GL","Arena"],
     "thumbnail":"thumbnails/ndwviewer.gif",
-    "description":"Real-time animated NDW traffic data",
+    "description":"The NDW (Nationale Databank Wegverkeergegevens / Netherlands data warehouse for traffic information) allows access to current traffic speed and traffic intensity from many measuring points (weglussen). For this demo, traffic flow information is interpolated to full road segments and visualized using moving symbols. This visualization shows traffic speed, intensity and direction in a single view. User surveys show this visualization to be more user friendly and informative than current standard visualizations. We have implemented a custom mapbox-gl layer for this purpose.",
     "date":"November 2017"
 },
 {
