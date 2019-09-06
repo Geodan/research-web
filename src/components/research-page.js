@@ -137,13 +137,19 @@ class ResearchPage extends LitElement {
         }
         const regExp = new RegExp(filterString, 'i');
         this.demos = this.allDemos.filter(demo=>{
-            if (demo.title && demo.title.search(regExp) != -1) {
+            if (demo.title && demo.title.search(regExp) !== -1) {
                 return true;
             }
-            if (demo.description && demo.description.search(regExp) != -1) {
+            if (demo.description && demo.description.search(regExp) !== -1) {
                 return true;
             }
-            if (demo.date && demo.date.search(regExp) != -1) {
+            if (demo.date && demo.date.search(regExp) !== -1) {
+                return true;
+            }
+            if (demo.url && demo.url.search(regExp) !== -1) {
+                return true;
+            }
+            if (demo.thumbnail && demo.thumbnail.search(regExp) !== -1) {
                 return true;
             }
             if (demo.tags && demo.tags.length) {
