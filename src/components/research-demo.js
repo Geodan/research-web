@@ -104,10 +104,14 @@ class ResearchDemo extends LitElement {
             return html`${demo.error}`
         }
         let linkUrl = demo.url;
-        if (linkUrl.startsWith('https://www.youtube.com')){
-            linkUrl = `./video.html?url=${encodeURIComponent(demo.url)}`;
-        } else if (linkUrl.startsWith('https://youtu.be')){
-            linkUrl = `./video.html?url=${encodeURIComponent(demo.url)}`;
+        let isVideo = false;
+        if (linkUrl.startsWith('https://www.youtube.com') ||
+            linkUrl.startsWith('https://youtu.be') ||
+            linkUrl.startsWith('https://vimeo.com/')) {
+                linkUrl = `./video.html?url=${encodeURIComponent(demo.url)}`;
+                isVideo = true;
+        } else {
+            linkUrl = `./more.html?url=${encodeURIComponent(demo.url)}`;
         }
         // using unsafeHTML for img in preview so that superGif can update the html
         // otherwise litelement would try to update the (no longer existing) img src part only
@@ -128,7 +132,7 @@ class ResearchDemo extends LitElement {
                         ${demo.title}
                     </div>
                     <div class="todemo">
-                        <div>Demo</div><div class="arrow"><img src="images/icon-arrow.svg"></div>
+                        <div>More...</div><div class="arrow"><img src="images/icon-arrow.svg"></div>
                     </div>
                 </a>
             </div>

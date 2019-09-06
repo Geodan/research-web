@@ -5,7 +5,7 @@ import "whatwg-fetch";
 * @polymer
 * @extends HTMLElement
 */
-class VideoPage extends LitElement {
+class MorePage extends LitElement {
     static get properties() {
         return {
             demos: {type: Array}
@@ -81,6 +81,10 @@ class VideoPage extends LitElement {
                 padding-top: 60px;
                 padding-bottom: 60px;
             }
+            .image img {
+                width: 400px;
+                height: auto;
+            }
             .date {
                 font-size: 16px;
                 font-weight: 300;
@@ -91,10 +95,6 @@ class VideoPage extends LitElement {
                 font-weight: bold;
                 color: #d6232f;
                 margin-bottom: 30px;
-            }
-            iframe {
-                width: 825px;
-                height: 465px;
             }
             .description {
                 font-size: 16px;
@@ -122,17 +122,13 @@ class VideoPage extends LitElement {
             }
         `
     }
-    renderIframe(demo) {
-        if (demo.isVimeo) {
-            return html`
-            <iframe src="https://player.vimeo.com/video/${demo.url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-            `
-        }        
-        return html`<iframe  src="https://www.youtube.com/embed/${demo.url}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    }
-    renderVideo() {
+    renderMore() {
         if (this.demos.length === 0) {
-            return html`invalid url`;
+            if (this.configLoaded) {
+                return html`invalid url`;
+            } else {
+                return html`loading...`;
+            }
         }
         return html`
             <div class="graybackground">
@@ -141,7 +137,10 @@ class VideoPage extends LitElement {
                     <div class="videodemo">
                         <div class="date"><b>Date</b> - ${this.demos[0].date}</div>
                         <div class="title">${this.demos[0].title}</div>
-                        ${this.renderIframe(this.demos[0])}
+                        <a href="${this.demos[0].url}" target="researchdemo">
+                        <div class="image"><img src="${this.demos[0].thumbnail}"></div>
+                        <div class="demolink">Live demo</div>
+                        </a>
                         <div class="description">${this.demos[0].description}</div>
                     </div>    
                 </div>
@@ -158,11 +157,12 @@ class VideoPage extends LitElement {
                 <div class="header-logo"><img src="images/geodan.png"></div>
             </div>
             <div class="video">
-                ${this.renderVideo()}
+                ${this.renderMore()}
             </div>
         `
     }
     firstUpdated() {
+        this.configLoaded = true;
         this._loadConfig();
     }
     
@@ -180,21 +180,10 @@ class VideoPage extends LitElement {
             }
         }).then(demos=>{
             let urlParams = new URLSearchParams(window.location.search);
-            let videoUrl = urlParams.get('url');
-            this.demos = demos.filter(demo=>!demo.disabled && demo.url === videoUrl).map(demo=>{
-                if (demo.url.startsWith('https://www.youtube.com')) {
-                    let urlParams = new URLSearchParams(new URL(demo.url).search);
-                    demo.url = urlParams.get('v'); // embed id
-                } else if (demo.url.startsWith('https://youtu.be/')) {
-                    demo.url = demo.url.substring(16);
-                } else if (demo.url.startsWith('https://vimeo.com/')) {
-                    demo.isVimeo = true;
-                    demo.url = demo.url.substring('18')
-                }
-                return demo;
-            });
+            let demoUrl = urlParams.get('url');
+            this.demos = demos.filter(demo=>!demo.disabled && demo.url === demoUrl);
         })
     }
 }
 
-customElements.define('video-page', VideoPage);
+customElements.define('more-page', MorePage);
