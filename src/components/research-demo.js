@@ -27,6 +27,7 @@ class ResearchDemo extends LitElement {
                 margin-right: 10px;
                 box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
                 min-height: 300px;
+                background-color: white;
             }
             a {
                 text-decoration: none;

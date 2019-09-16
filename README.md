@@ -34,7 +34,7 @@ The build step is not necessary for updating the list of demos. To update the de
 
 If you changed the code or the look and feel of the website, a new build is required:
 
-    polymer build
+    polymer build --base-path /
     cd build/es5-bundled
 
 directory ``build/es5-bundled`` now contains the updated website (including newest ``config/config.json`` and ``thumbnails/``). If you use ``scp``, you can deploy the new website to the production environment:
